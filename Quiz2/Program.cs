@@ -18,8 +18,8 @@ namespace Quiz2
             float tax = float.Parse(Console.ReadLine());
             Console.WriteLine("Enter the discount: ");
             float discount = float.Parse(Console.ReadLine());
-            //Calculates the item's cost by 
-            float cost = item * tax / discount;
+            //Calculates the item's cost
+            float cost = item / discount + tax;
             //displays answer of total cost
             Console.WriteLine("The item's total cost is: " + cost + " dollars.");
             Console.Read();
